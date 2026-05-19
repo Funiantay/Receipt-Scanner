@@ -8,7 +8,7 @@ Built for the **TP Malaysia AI Intern Assessment**.
 
 ## Live Demo
 
-> Vercel URL: _(add after deployment)_
+> Vercel URL: https://receipt-scanner-cyan.vercel.app/
 
 ---
 
