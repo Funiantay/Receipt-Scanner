@@ -32,6 +32,19 @@ Then open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ---
 
+## How to Deploy on Vercel
+
+1. Push this repo to GitHub
+2. Go to [vercel.com](https://vercel.com) and sign in with GitHub
+3. Click **Add New Project** and import the `receipt-scanner` repo
+4. Add the environment variable before deploying:
+   - Key: `ANTHROPIC_API_KEY`
+   - Value: your Anthropic API key
+5. Click **Deploy** and wait for it to finish
+6. Vercel will give you a live URL that anyone can access
+
+---
+
 ## Model & Prompt
 
 **Model used:** `claude-sonnet-4-6` via the Anthropic API
