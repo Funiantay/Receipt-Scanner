@@ -425,6 +425,8 @@
   display: flex;
   align-items: center;
   gap: 4px;
+  flex-shrink: 0;
+  flex-wrap: nowrap;
 }
 
 .confBadge {
@@ -434,6 +436,7 @@
   padding: 1px 6px;
   border-radius: 10px;
   letter-spacing: 0.03em;
+  white-space: nowrap;
 }
 
 .confHigh { background: var(--success-bg); color: var(--success); border: 1px solid var(--success-border); }
@@ -448,6 +451,7 @@
   border-radius: 10px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .sourceExplicit {
@@ -1318,7 +1322,7 @@
 .statChipWarn { background: var(--warn-bg); border-color: var(--warn-border); color: var(--warn); }
 
 /* ── field icon label ───────────────────────── */
-.fieldIconLabel { display: flex; align-items: center; gap: 5px; }
+.fieldIconLabel { display: flex; align-items: center; gap: 5px; min-width: 0; overflow: hidden; }
 
 /* ── field row stagger animation ────────────── */
 .fieldRowAnimated { animation: fadeUp 0.35s cubic-bezier(0.16,1,0.3,1) both; }
