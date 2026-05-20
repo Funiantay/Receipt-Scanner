@@ -182,6 +182,8 @@
   overflow: hidden;
   box-shadow: var(--shadow-sm);
   transition: box-shadow 0.2s ease, transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .imagePanel:hover {
@@ -191,7 +193,8 @@
 
 .imageWrap {
   position: relative;
-  height: 360px;
+  flex: 1;
+  min-height: 260px;
   background: var(--surface-2);
   overflow: hidden;
 }
@@ -375,6 +378,8 @@
   padding: 1.4rem 1.4rem 1.4rem;
   box-shadow: var(--shadow-sm);
   transition: box-shadow 0.2s ease, transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .formPanel:hover {
