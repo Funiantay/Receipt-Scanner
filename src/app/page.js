@@ -512,12 +512,7 @@ export default function Home() {
                           {Math.round(confidence.currency * 100)}% accuracy
                         </span>
                       )}
-                      {currencySource && prefilled.currency && (
-                        <span className={`${styles.sourceBadge} ${currencySource === "explicit" ? styles.sourceExplicit : styles.sourceInferred}`}>
-                          {currencySource === "explicit" ? "on receipt" : "inferred"}
-                        </span>
-                      )}
-                      {verification?.currency && prefilled.currency && (
+{verification?.currency && prefilled.currency && (
                         <span className={`${styles.verifyBadge} ${verification.currency.ok ? styles.verifyOk : styles.verifyWarn}`}>
                           {verification.currency.ok ? "✓" : "!"}
                         </span>
