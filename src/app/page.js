@@ -120,9 +120,7 @@ export default function Home() {
         reader.readAsDataURL(file);
       });
 
-      const rawType = file.type || "image/jpeg";
-      const typeMap = { "image/jpg": "image/jpeg" };
-      const mediaType = typeMap[rawType] || (["image/jpeg","image/png","image/gif","image/webp"].includes(rawType) ? rawType : "image/jpeg");
+      const mediaType = file.type || "image/jpeg";
 
       const res  = await fetch("/api/extract", {
         method: "POST",
