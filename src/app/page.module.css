@@ -1412,19 +1412,19 @@
   vertical-align: middle;
 }
 
-.qtyCol, .priceCol { text-align: right; width: 80px; }
+.qtyCol, .priceCol { text-align: center; width: 80px; }
 
 .itemName { font-size: 13px; }
 
 .qtyCell {
-  text-align: right;
+  text-align: center;
   color: var(--ink-muted) !important;
   font-size: 12px;
   width: 48px;
 }
 
 .priceCell {
-  text-align: right;
+  text-align: center;
   font-family: var(--font-mono);
   font-size: 13px;
   font-weight: 500;
