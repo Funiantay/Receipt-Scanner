@@ -16,6 +16,7 @@ export async function POST(request) {
       body: JSON.stringify({
         model: "claude-sonnet-4-6",
         max_tokens: 2000,
+        temperature: 0,
         messages: [
           {
             role: "user",
